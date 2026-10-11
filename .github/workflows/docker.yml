@@ -31,6 +31,7 @@ jobs:
   docker:
     name: Construir y publicar imagen
     needs: test
+    environment: LAB04CC
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
