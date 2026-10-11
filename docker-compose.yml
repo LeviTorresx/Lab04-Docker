@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    image: miapp-docker:v1
+    container_name: lab04
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+    restart: unless-stopped
